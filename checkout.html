@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout — Alien Arsenal</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo">Alien <span>Arsenal</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart <span id="nav-cart-count" class="badge">0</span></a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <div class="disclaimer">⚠️ This is a fictional portfolio project. No alien weaponry is actually for sale.</div>
+
+    <main>
+      <section class="checkout">
+        <h1>Checkout</h1>
+        <form id="checkout-form" novalidate>
+          <fieldset>
+            <legend>Contact</legend>
+            <label>Full Name
+              <input type="text" name="name" required placeholder="Captain Jane Orion">
+            </label>
+            <label>Email
+              <input type="email" name="email" required placeholder="jane@orionfleet.gx">
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Shipping</legend>
+            <label>Planet / Station
+              <input type="text" name="planet" required placeholder="Rigel IV Outpost">
+            </label>
+            <label>Sector Code
+              <input type="text" name="sector" required placeholder="SCT-7XZ">
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Payment</legend>
+            <label>Method
+              <select name="payment" required>
+                <option value="">Select</option>
+                <option>Galactic Credits</option>
+                <option>Refined Uranium</option>
+                <option>Goat Sacrifice</option>
+              </select>
+            </label>
+            <label>Authorization Code
+              <input type="text" name="auth" required placeholder="AUTH-42-OMEGA">
+            </label>
+          </fieldset>
+          <div class="actions"><button type="submit" class="btn">Submit Order</button></div>
+          <p class="muted small">Note: This site is fictional and will not collect or transmit any real payment information.</p>
+        </form>
+
+        <dialog id="confirm-modal">
+          <h2>Order Received</h2>
+          <p>Thanks, <span id="conf-name"></span>! Delivery ETA: <strong>3.2 light years</strong>. Check your inbox at <span id="conf-email"></span>.</p>
+          <form method="dialog"><button class="btn">Close</button></form>
+        </dialog>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>© <span id="year"></span> Alien Arsenal — A fictional demo by You.</p></footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="app.js"></script>
+  </body>
+</html>

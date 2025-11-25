@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Antimatter Lance — Alien Arsenal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Alien <span>Arsenal</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart <span id="nav-cart-count" class="badge">0</span></a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <div class="disclaimer">⚠️ Fictional portfolio project.</div>
+
+  <main class="pdp">
+    <div class="pdp-media">
+      <img src="images/antimatter-lance.svg" alt="Antimatter Lance">
+    </div>
+    <div class="pdp-body">
+      <h1>Antimatter Lance</h1>
+      <p class="muted">High-energy spear for armored targets.</p>
+      <ul class="specs">
+        <li><strong>Yield:</strong> 3.1 MJ per strike</li>
+        <li><strong>Containment:</strong> Triply-braided magnetic bottle</li>
+        <li><strong>Recharge:</strong> 2.4 s</li>
+      </ul>
+      <div class="pdp-buy">
+        <div class="price big">$3,499</div>
+        <button id="add-to-cart" class="btn" data-id="al-1">Add to Cart</button>
+      </div>
+      <div class="pdp-links">
+        <a href="cart.html" class="btn btn-ghost">Go to Cart</a>
+        <a href="index.html" class="btn btn-ghost">Back to Store</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>© <span id="year"></span> Alien Arsenal — A fictional demo by You.</p></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+</body>
+</html>

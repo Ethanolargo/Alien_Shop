@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Alien Arsenal</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo">Alien <span>Arsenal</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart <span id="nav-cart-count" class="badge">0</span></a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <div class="disclaimer">⚠️ This is a fictional portfolio project. No alien weaponry is actually for sale.</div>
+
+    <main class="about">
+      <h1>About Alien Arsenal</h1>
+      <p>Founded in 2142 on the Martian frontier, Alien Arsenal curates only the finest interstellar weaponry. From reality seams to micro-singularities, our fictional catalog exists to showcase front-end UI/UX craft.</p>
+      <h2>Disclaimer</h2>
+      <p class="muted">This is a <strong>fictional e-commerce demo</strong> built for a developer portfolio. No products are real, and no transactions occur.</p>
+    </main>
+
+    <footer class="site-footer"><p>© <span id="year"></span> Alien Arsenal — A fictional demo by You.</p></footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="app.js"></script>
+  </body>
+</html>

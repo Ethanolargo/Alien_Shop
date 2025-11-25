@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Black Hole Projector — Alien Arsenal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Alien <span>Arsenal</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart <span id="nav-cart-count" class="badge">0</span></a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <div class="disclaimer">⚠️ Fictional portfolio project.</div>
+
+  <main class="pdp">
+    <div class="pdp-media">
+      <img src="images/black-hole-projector.svg" alt="Black Hole Projector">
+    </div>
+    <div class="pdp-body">
+      <h1>Black Hole Projector</h1>
+      <p class="muted">Micro-singularity emitter with automatic Hawking bleed-off.</p>
+      <ul class="specs">
+        <li><strong>Event horizon radius:</strong> 3.4 nm</li>
+        <li><strong>Duration:</strong> 1.2 s (auto-collapse)</li>
+        <li><strong>Safety:</strong> Anti-spaghettification field</li>
+      </ul>
+      <div class="pdp-buy">
+        <div class="price big">$72,000</div>
+        <button id="add-to-cart" class="btn" data-id="bh-9">Add to Cart</button>
+      </div>
+      <div class="pdp-links">
+        <a href="cart.html" class="btn btn-ghost">Go to Cart</a>
+        <a href="index.html" class="btn btn-ghost">Back to Store</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>© <span id="year"></span> Alien Arsenal — A fictional demo by You.</p></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+</body>
+</html>

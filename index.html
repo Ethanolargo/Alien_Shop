@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alien Arsenal — Galactic Marketplace</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo">Alien <span>Arsenal</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart <span id="nav-cart-count" class="badge">0</span></a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <div class="disclaimer">
+      ⚠️ This is a fictional portfolio project. No alien weaponry is actually for sale.
+    </div>
+
+    <main>
+      <section class="hero">
+        <h1>The Galaxy's #1 Source for Interstellar Firepower</h1>
+        <p>Browse our hand-curated arsenal, forged on distant worlds since 2142.</p>
+        <a class="btn" href="#store">Browse the Arsenal</a>
+      </section>
+
+      <section id="store" class="store">
+        <h2>Featured Weapons</h2>
+        <div class="grid">
+          <a class="card-link" href="product-reality-splitter.html">
+            <article class="card">
+              <div class="media"><img src="images/reality-splitter.svg" alt="Reality Splitter Sword"></div>
+              <div class="body">
+                <h3>Reality Splitter Sword</h3>
+                <p>A blade that slices seams between dimensions.</p>
+                <div class="row"><span class="price">$8,800</span></div>
+              </div>
+            </article>
+          </a>
+
+          <a class="card-link" href="product-black-hole-projector.html">
+            <article class="card">
+              <div class="media"><img src="images/black-hole-projector.svg" alt="Black Hole Projector"></div>
+              <div class="body">
+                <h3>Black Hole Projector</h3>
+                <p>Portable singularity generator (micro-event). Handle carefully.</p>
+                <div class="row"><span class="price">$72,000</span></div>
+              </div>
+            </article>
+          </a>
+
+          <a class="card-link" href="product-quantum-entangler.html">
+            <article class="card">
+              <div class="media"><img src="images/quantum-entangler.svg" alt="Quantum Entangler Net"></div>
+              <div class="body">
+                <h3>Quantum Entangler Net</h3>
+                <p>Snare targets by binding their probabilities.</p>
+                <div class="row"><span class="price">$5,400</span></div>
+              </div>
+            </article>
+          </a>
+
+          <a class="card-link" href="product-antimatter-lance.html">
+            <article class="card">
+              <div class="media"><img src="images/antimatter-lance.svg" alt="Antimatter Lance"></div>
+              <div class="body">
+                <h3>Antimatter Lance</h3>
+                <p>High-energy spear for armored targets.</p>
+                <div class="row"><span class="price">$3,499</span></div>
+              </div>
+            </article>
+          </a>
+
+          <a class="card-link" href="product-temporal-stasis-grenade.html">
+            <article class="card">
+              <div class="media"><img src="images/temporal-stasis-grenade.svg" alt="Temporal Stasis Grenade"></div>
+              <div class="body">
+                <h3>Temporal Stasis Grenade</h3>
+                <p>Freeze a 3m bubble of spacetime for 6.2s.</p>
+                <div class="row"><span class="price">$1,250</span></div>
+              </div>
+            </article>
+          </a>
+
+          <a class="card-link" href="product-void-whisperer-staff.html">
+            <article class="card">
+              <div class="media"><img src="images/void-whisperer-staff.svg" alt="Void Whisperer Staff"></div>
+              <div class="body">
+                <h3>Void Whisperer Staff</h3>
+                <p>Channel the hush of the interstellar dark.</p>
+                <div class="row"><span class="price">$9,900</span></div>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Alien Arsenal — A fictional demo by You.</p>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reality Splitter Sword — Alien Arsenal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Alien <span>Arsenal</span></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart <span id="nav-cart-count" class="badge">0</span></a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <div class="disclaimer">⚠️ This is a fictional portfolio project. No alien weaponry is actually for sale.</div>
+
+  <main class="pdp">
+    <div class="pdp-media">
+      <img src="images/reality-splitter.svg" alt="Reality Splitter Sword">
+    </div>
+    <div class="pdp-body">
+      <h1>Reality Splitter Sword</h1>
+      <p class="muted">A blade that severs dimensional seams with sub-Planck precision.</p>
+      <ul class="specs">
+        <li><strong>Core:</strong> Crystallized vacuum energy</li>
+        <li><strong>Edge phase:</strong> 11.2π radians</li>
+        <li><strong>Cooldown:</strong> 4.6 s between rifts</li>
+      </ul>
+      <div class="pdp-buy">
+        <div class="price big">$8,800</div>
+        <button id="add-to-cart" class="btn" data-id="rs-1">Add to Cart</button>
+      </div>
+      <p class="small muted">Warranty voided if used to slice causality.</p>
+      <div class="pdp-links">
+        <a href="cart.html" class="btn btn-ghost">Go to Cart</a>
+        <a href="index.html" class="btn btn-ghost">Back to Store</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>© <span id="year"></span> Alien Arsenal — A fictional demo by You.</p></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+</body>
+</html>

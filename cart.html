@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Cart — Alien Arsenal</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo">Alien <span>Arsenal</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart <span id="nav-cart-count" class="badge">0</span></a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <div class="disclaimer">⚠️ This is a fictional portfolio project. No alien weaponry is actually for sale.</div>
+
+    <main>
+      <section class="cart">
+        <h1>Your Cart</h1>
+
+        <div id="cart-empty" class="muted">Your cart is empty. <a href="index.html">Browse the arsenal</a>.</div>
+        <div id="cart-items" class="cart-items"></div>
+
+        <div id="cart-summary" class="cart-summary hidden">
+          <div class="row"><span>Subtotal</span><span id="subtotal">$0</span></div>
+          <div class="row"><span>Interstellar Tax (3%)</span><span id="tax">$0</span></div>
+          <div class="row total"><span>Total</span><span id="total">$0</span></div>
+          <div class="actions">
+            <a href="checkout.html" class="btn">Proceed to Checkout</a>
+            <button id="clear-cart" class="btn btn-ghost">Clear Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>© <span id="year"></span> Alien Arsenal — A fictional demo by You.</p></footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="app.js"></script>
+  </body>
+</html>
