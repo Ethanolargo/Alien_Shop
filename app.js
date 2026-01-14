@@ -111,7 +111,7 @@ function addToCart(id){
   updateNavCount();
 })();
 
-/* Checkout submit (fake) */
+// Checkout
 (function wireCheckout(){
   const form = document.getElementById('checkout-form');
   if (!form) { updateNavCount(); return; }
